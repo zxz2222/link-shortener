@@ -29,4 +29,4 @@ ENV FLASK_ENV=production
 # Use gunicorn for a more production-ready server if desired,
 # but flask run is fine for simple cases and Render.
 # Using python app.py directly as defined in the script's __main__ block.
-CMD ["python", "app.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "app:app"]
