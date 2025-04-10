@@ -43,23 +43,8 @@ cd link-shortener
 
 This method runs the application directly using Python on your machine.
 
-**1. Create a Virtual Environment (Recommended):**
 
-It's good practice to create a virtual environment to isolate project dependencies. Run the following command in the `link-shortener` directory:
-
-```bash
-# On Windows
-python -m venv venv
-venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-You should see `(venv)` at the beginning of your terminal prompt, indicating the virtual environment is active.
-
-**2. Install Dependencies:**
+**1. Install Dependencies:**
 
 Install the required Python packages listed in `requirements.txt`:
 
@@ -67,7 +52,7 @@ Install the required Python packages listed in `requirements.txt`:
 pip install -r requirements.txt
 ```
 
-**3. Run the Flask Application:**
+**2. Run the Flask Application:**
 
 Start the development server:
 
@@ -77,7 +62,7 @@ python app.py
 
 You should see output indicating the server is running, typically on `http://127.0.0.1:5000`.
 
-**4. Access the Application:**
+**3. Access the Application:**
 
 Open your web browser and navigate to:
 
@@ -89,13 +74,6 @@ You should see the link shortener interface. You can now use the application.
 
 Press `CTRL+C` in the terminal where the server is running.
 
-**6. Deactivate Virtual Environment (Optional):**
-
-When you're done working on the project, you can deactivate the virtual environment:
-
-```bash
-deactivate
-```
 
 ## Running the Application with Docker
 
